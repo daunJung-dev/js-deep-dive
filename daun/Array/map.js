@@ -4,8 +4,10 @@ Array.prototype.myMap = function (callback, thisArg) {
   if (thisArg) {
     callback.prototype.bind(thisArg);
   }
-  for (let i = 0; i < this.length - 1; i++) {
+  for (let i = 0; i < this.length; i++) {
     result.push(callback(this[i], i, this));
   }
   return result;
 };
+
+module.exports = Array;
