@@ -17,3 +17,5 @@ function filter(array, callbackFn) {
 }
 
 export { filter };
+
+[].filter('')
